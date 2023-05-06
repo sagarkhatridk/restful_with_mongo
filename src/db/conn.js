@@ -1,7 +1,7 @@
 const mongoose  = require("mongoose")
 
 console.log("connecting mongodb")
-mongoose.connect("mongodb://127.0.0.1:27017/students-api",{
+mongoose.connect("mongodb+srv://sagarkhatridk:10102000mongo@cluster0.wlv1zuq.mongodb.net/students-api",{
   
 }).then(()=>{
     console.log("connection Success")
