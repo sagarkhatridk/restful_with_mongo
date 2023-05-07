@@ -51,7 +51,7 @@ router.get('/', async (req, res) => {
             "patch": "Update your informatiom with patch method  https://www.sagarkhatri.cloud/students/id",
             "get": "get all the recods of students https://www.sagarkhatri.cloud/students",
             "get_specific": "get the recods of specific student https://www.sagarkhatri.cloud/students/id"
-        },
+        
         },
         "configuration": {
             "language": "javascript",
