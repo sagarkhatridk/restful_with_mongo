@@ -50,7 +50,7 @@ router.get('/', async (req, res) => {
             "delete": "Delete your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
             "patch": "Update your informatiom with patch method  https://www.sagarkhatri.cloud/students/id",
             "get": "get all the recods of students https://www.sagarkhatri.cloud/students",
-            "get": "get the recods of specific student https://www.sagarkhatri.cloud/students/id"
+            "get_specific": "get the recods of specific student https://www.sagarkhatri.cloud/students/id"
         },
         },
         "configuration": {
