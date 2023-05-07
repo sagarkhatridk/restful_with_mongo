@@ -15,6 +15,9 @@ router.post('/students', async(req, res)=>{
     }
 })
 
+router.get('/', async(req, res)=>{
+    res.send({"Greetings":"welcome to the https://www.sagarkhatri.cloud"})
+})
 
 
 router.get('/students', async(req, res)=>{
