@@ -15,8 +15,21 @@ router.post('/students', async(req, res)=>{
     }
 })
 
-router.get('/', async(req, res)=>{
-    res.send({"Greetings":"welcome to the https://www.sagarkhatri.cloud"})
+router.get('/', async (req, res) => {
+    res.send({
+        "Greetings": "welcome to the https://www.sagarkhatri.cloud",
+        "post": "add your detials with post method",
+        "get": "Get your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
+        "delete": "Delete your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
+        "patch": "Update your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
+        "get": "get all the recods of students https://www.sagarkhatri.cloud/students",
+        "configuration": {
+            "language": "javascript",
+            "env": "node",
+            "framwork": "express",
+            "hosting": "hostinger.com",
+        }
+    })
 })
 
 
