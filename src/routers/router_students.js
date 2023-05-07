@@ -19,6 +19,12 @@ router.get('/', async (req, res) => {
     res.send({
         "Greetings": "welcome to the https://www.sagarkhatri.cloud",
         "post": "add your detials with post method",
+        "fields":{
+            "name": "required and must be greater then 3 character",
+            "email": "require and alsomust be unique",
+            "phone": "require and alsomust be unique",
+            "address": "required"   
+        },
         "get": "Get your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
         "delete": "Delete your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
         "patch": "Update your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
