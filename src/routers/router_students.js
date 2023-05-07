@@ -46,9 +46,9 @@ router.get('/', async (req, res) => {
         },
         "method": {
             "post": "add your detials with post method",
-            "get": "Get your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
+            "get": "Get your informatiom with get method  https://www.sagarkhatri.cloud/students/id",
             "delete": "Delete your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
-            "patch": "Update your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
+            "patch": "Update your informatiom with patch method  https://www.sagarkhatri.cloud/students/id",
             "get": "get all the recods of students https://www.sagarkhatri.cloud/students",
         },
         "configuration": {
