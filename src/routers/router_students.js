@@ -20,10 +20,30 @@ router.get('/', async (req, res) => {
         "Greetings": "welcome to the https://www.sagarkhatri.cloud",
         "post": "add your detials with post method",
         "fields":{
-            "name": "required and must be greater then 3 character",
-            "email": "require and alsomust be unique",
-            "phone": "require and alsomust be unique",
-            "address": "required"   
+            "name": {
+                "type":String,
+                "required":true,
+                "min character":3
+            },
+            "email": {
+                "type":String,
+                "required":true,
+                "unique":true,
+                "validaation":true
+            },
+            "phone":  {
+                "type":Number,
+                "required":true,
+                "unique":true,
+                "min length":10,
+                "max length":10
+            },
+            "address":  {
+                "type":String,
+                "required":true,
+                "unique":false,
+                "validaation":false
+            }  
         },
         "get": "Get your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
         "delete": "Delete your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
