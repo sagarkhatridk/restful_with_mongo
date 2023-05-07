@@ -18,37 +18,39 @@ router.post('/students', async(req, res)=>{
 router.get('/', async (req, res) => {
     res.send({
         "Greetings": "welcome to the https://www.sagarkhatri.cloud",
-        "post": "add your detials with post method",
-        "fields":{
+        "fields": {
             "name": {
-                "type":String,
-                "required":true,
-                "min character":3
+                "type": String,
+                "required": true,
+                "min character": 3
             },
             "email": {
-                "type":String,
-                "required":true,
-                "unique":true,
-                "validaation":true
+                "type": String,
+                "required": true,
+                "unique": true,
+                "validaation": true
             },
-            "phone":  {
-                "type":Number,
-                "required":true,
-                "unique":true,
-                "min length":10,
-                "max length":10
+            "phone": {
+                "type": Number,
+                "required": true,
+                "unique": true,
+                "min length": 10,
+                "max length": 10
             },
-            "address":  {
-                "type":String,
-                "required":true,
-                "unique":false,
-                "validaation":false
-            }  
+            "address": {
+                "type": String,
+                "required": true,
+                "unique": false,
+                "validaation": false
+            }
         },
-        "get": "Get your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
-        "delete": "Delete your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
-        "patch": "Update your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
-        "get": "get all the recods of students https://www.sagarkhatri.cloud/students",
+        "method": {
+            "post": "add your detials with post method",
+            "get": "Get your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
+            "delete": "Delete your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
+            "patch": "Update your informatiom with delete method  https://www.sagarkhatri.cloud/students/id",
+            "get": "get all the recods of students https://www.sagarkhatri.cloud/students",
+        },
         "configuration": {
             "language": "javascript",
             "env": "node",
@@ -57,6 +59,7 @@ router.get('/', async (req, res) => {
         }
     })
 })
+
 
 
 router.get('/students', async(req, res)=>{
