@@ -20,8 +20,11 @@ router.post('/students', async(req, res)=>{
 router.get('/students', async(req, res)=>{
 
     try{
+        let page = Number(req.query.page) || 1
+        let limit = Number(req.query.limit) || 3
     
-        const studentsData = await Student.find()
+        let skip  = (page - 1) * limit
+        const studentsData = await Student.find({}).skip(skip).limit(limit)
         
         res.status(200).send({"results":studentsData})
     }
@@ -33,6 +36,9 @@ router.get('/students', async(req, res)=>{
 
 
 router.get('/students/:id', async(req, res)=>{
+
+   
+    
 
     try{
         const _id = req.params.id;
